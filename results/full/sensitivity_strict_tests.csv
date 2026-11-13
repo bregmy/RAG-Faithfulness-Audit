@@ -1,0 +1,31 @@
+family,metric,a,b,test,n_pairs,mean_a,mean_b,effect,effect_name,detail,p,p_holm
+mitigation,correct,C0 M0,C0 M1,McNemar (exact),75,0.92,0.88,-0.04,difference (b - a),"discordant: only a=4, only b=1",0.375,1.0
+mitigation,correct,C0 M0,C0 M2,McNemar (exact),75,0.92,0.9467,0.0267,difference (b - a),"discordant: only a=2, only b=4",0.6875,1.0
+mitigation,correct,C0 M1,C0 M2,McNemar (exact),75,0.88,0.9467,0.0667,difference (b - a),"discordant: only a=1, only b=6",0.125,1.0
+mitigation,correct,C1 M0,C1 M1,McNemar (exact),75,0.88,0.8933,0.0133,difference (b - a),"discordant: only a=2, only b=3",1.0,1.0
+mitigation,correct,C1 M0,C1 M2,McNemar (exact),75,0.88,0.9333,0.0533,difference (b - a),"discordant: only a=0, only b=4",0.125,1.0
+mitigation,correct,C1 M1,C1 M2,McNemar (exact),75,0.8933,0.9333,0.04,difference (b - a),"discordant: only a=0, only b=3",0.25,1.0
+mitigation,correct,C2 M0,C2 M1,McNemar (exact),75,0.8667,0.84,-0.0267,difference (b - a),"discordant: only a=3, only b=1",0.625,1.0
+mitigation,correct,C2 M0,C2 M2,McNemar (exact),75,0.8667,0.8933,0.0267,difference (b - a),"discordant: only a=2, only b=4",0.6875,1.0
+mitigation,correct,C2 M1,C2 M2,McNemar (exact),75,0.84,0.8933,0.0533,difference (b - a),"discordant: only a=1, only b=5",0.2188,1.0
+mitigation,correct,C3 M0,C3 M1,McNemar (exact),75,0.8533,0.88,0.0267,difference (b - a),"discordant: only a=0, only b=2",0.5,1.0
+mitigation,correct,C3 M0,C3 M2,McNemar (exact),75,0.8533,0.92,0.0667,difference (b - a),"discordant: only a=0, only b=5",0.0625,1.0
+mitigation,correct,C3 M1,C3 M2,McNemar (exact),75,0.88,0.92,0.04,difference (b - a),"discordant: only a=0, only b=3",0.25,1.0
+mitigation,correct,C4 M0,C4 M1,McNemar (exact),75,0.64,0.6133,-0.0267,difference (b - a),"discordant: only a=6, only b=4",0.7539,1.0
+mitigation,correct,C4 M0,C4 M2,McNemar (exact),75,0.64,0.56,-0.08,difference (b - a),"discordant: only a=13, only b=7",0.2632,1.0
+mitigation,correct,C4 M1,C4 M2,McNemar (exact),75,0.6133,0.56,-0.0533,difference (b - a),"discordant: only a=12, only b=8",0.5034,1.0
+condition vs C0,correct,C0 M0,C1 M0,McNemar (exact),75,0.92,0.88,-0.04,difference (b - a),"discordant: only a=3, only b=0",0.25,1.0
+condition vs C0,correct,C0 M0,C2 M0,McNemar (exact),75,0.92,0.8667,-0.0533,difference (b - a),"discordant: only a=4, only b=0",0.125,1.0
+condition vs C0,correct,C0 M0,C3 M0,McNemar (exact),75,0.92,0.8533,-0.0667,difference (b - a),"discordant: only a=6, only b=1",0.125,1.0
+condition vs C0,correct,C0 M0,C4 M0,McNemar (exact),75,0.92,0.64,-0.28,difference (b - a),"discordant: only a=22, only b=1",0.0,0.0001
+random vs related noise,correct,C1 M0,C2 M0,McNemar (exact),75,0.88,0.8667,-0.0133,difference (b - a),"discordant: only a=3, only b=2",1.0,1.0
+condition vs C0,correct,C0 M1,C1 M1,McNemar (exact),75,0.88,0.8933,0.0133,difference (b - a),"discordant: only a=2, only b=3",1.0,1.0
+condition vs C0,correct,C0 M1,C2 M1,McNemar (exact),75,0.88,0.84,-0.04,difference (b - a),"discordant: only a=5, only b=2",0.4531,1.0
+condition vs C0,correct,C0 M1,C3 M1,McNemar (exact),75,0.88,0.88,0.0,difference (b - a),"discordant: only a=3, only b=3",1.0,1.0
+condition vs C0,correct,C0 M1,C4 M1,McNemar (exact),75,0.88,0.6133,-0.2667,difference (b - a),"discordant: only a=23, only b=3",0.0001,0.0019
+random vs related noise,correct,C1 M1,C2 M1,McNemar (exact),75,0.8933,0.84,-0.0533,difference (b - a),"discordant: only a=6, only b=2",0.2891,1.0
+condition vs C0,correct,C0 M2,C1 M2,McNemar (exact),75,0.9467,0.9333,-0.0133,difference (b - a),"discordant: only a=2, only b=1",1.0,1.0
+condition vs C0,correct,C0 M2,C2 M2,McNemar (exact),75,0.9467,0.8933,-0.0533,difference (b - a),"discordant: only a=5, only b=1",0.2188,1.0
+condition vs C0,correct,C0 M2,C3 M2,McNemar (exact),75,0.9467,0.92,-0.0267,difference (b - a),"discordant: only a=3, only b=1",0.625,1.0
+condition vs C0,correct,C0 M2,C4 M2,McNemar (exact),75,0.9467,0.56,-0.3867,difference (b - a),"discordant: only a=30, only b=1",0.0,0.0
+random vs related noise,correct,C1 M2,C2 M2,McNemar (exact),75,0.9333,0.8933,-0.04,difference (b - a),"discordant: only a=3, only b=0",0.25,1.0

@@ -1,0 +1,70 @@
+family,metric,a,b,test,n_pairs,mean_a,mean_b,effect,effect_name,detail,p,p_holm
+mitigation,correct,C0 M0,C0 M1,McNemar (exact),75,0.9467,0.9333,-0.0133,difference (b - a),"discordant: only a=2, only b=1",1.0,1.0
+mitigation,faithfulness,C0 M0,C0 M1,Wilcoxon signed-rank,73,0.9384,0.9269,-0.3333,rank-biserial r,non-zero differences: 3,0.75,1.0
+mitigation,correct,C0 M0,C0 M2,McNemar (exact),75,0.9467,0.9467,0.0,difference (b - a),"discordant: only a=2, only b=2",1.0,1.0
+mitigation,faithfulness,C0 M0,C0 M2,Wilcoxon signed-rank,74,0.9392,0.9054,-0.8,rank-biserial r,non-zero differences: 4,0.25,1.0
+mitigation,correct,C0 M1,C0 M2,McNemar (exact),75,0.9333,0.9467,0.0133,difference (b - a),"discordant: only a=1, only b=2",1.0,1.0
+mitigation,faithfulness,C0 M1,C0 M2,Wilcoxon signed-rank,72,0.9259,0.9167,-0.2,rank-biserial r,non-zero differences: 5,0.875,1.0
+mitigation,correct,C1 M0,C1 M1,McNemar (exact),75,0.9067,0.9333,0.0267,difference (b - a),"discordant: only a=2, only b=4",0.6875,1.0
+mitigation,faithfulness,C1 M0,C1 M1,Wilcoxon signed-rank,73,0.9061,0.9087,0.1333,rank-biserial r,non-zero differences: 5,0.875,1.0
+mitigation,correct,C1 M0,C1 M2,McNemar (exact),75,0.9067,0.9467,0.04,difference (b - a),"discordant: only a=0, only b=3",0.25,1.0
+mitigation,faithfulness,C1 M0,C1 M2,Wilcoxon signed-rank,74,0.9189,0.8851,-0.5238,rank-biserial r,non-zero differences: 6,0.375,1.0
+mitigation,correct,C1 M1,C1 M2,McNemar (exact),75,0.9333,0.9467,0.0133,difference (b - a),"discordant: only a=1, only b=2",1.0,1.0
+mitigation,faithfulness,C1 M1,C1 M2,Wilcoxon signed-rank,72,0.912,0.8819,-0.8,rank-biserial r,non-zero differences: 4,0.25,1.0
+mitigation,correct,C2 M0,C2 M1,McNemar (exact),75,0.92,0.9067,-0.0133,difference (b - a),"discordant: only a=2, only b=1",1.0,1.0
+mitigation,faithfulness,C2 M0,C2 M1,Wilcoxon signed-rank,74,0.9189,0.9189,0.0,rank-biserial r,non-zero differences: 5,1.0,1.0
+mitigation,correct,C2 M0,C2 M2,McNemar (exact),75,0.92,0.92,0.0,difference (b - a),"discordant: only a=3, only b=3",1.0,1.0
+mitigation,faithfulness,C2 M0,C2 M2,Wilcoxon signed-rank,75,0.9156,0.8911,-0.3929,rank-biserial r,non-zero differences: 7,0.4062,1.0
+mitigation,correct,C2 M1,C2 M2,McNemar (exact),75,0.9067,0.92,0.0133,difference (b - a),"discordant: only a=2, only b=3",1.0,1.0
+mitigation,faithfulness,C2 M1,C2 M2,Wilcoxon signed-rank,74,0.9189,0.8964,-0.381,rank-biserial r,non-zero differences: 6,0.5312,1.0
+mitigation,correct,C3 M0,C3 M1,McNemar (exact),75,0.92,0.9467,0.0267,difference (b - a),"discordant: only a=0, only b=2",0.5,1.0
+mitigation,faithfulness,C3 M0,C3 M1,Wilcoxon signed-rank,75,0.8956,0.9,0.1429,rank-biserial r,non-zero differences: 7,0.8125,1.0
+mitigation,correct,C3 M0,C3 M2,McNemar (exact),75,0.92,0.9467,0.0267,difference (b - a),"discordant: only a=1, only b=3",0.625,1.0
+mitigation,faithfulness,C3 M0,C3 M2,Wilcoxon signed-rank,75,0.8956,0.8978,0.0,rank-biserial r,non-zero differences: 6,1.0,1.0
+mitigation,correct,C3 M1,C3 M2,McNemar (exact),75,0.9467,0.9467,0.0,difference (b - a),"discordant: only a=1, only b=1",1.0,1.0
+mitigation,faithfulness,C3 M1,C3 M2,Wilcoxon signed-rank,75,0.9,0.8978,-0.1,rank-biserial r,non-zero differences: 4,1.0,1.0
+mitigation,correct,C4 M0,C4 M1,McNemar (exact),75,0.7067,0.6667,-0.04,difference (b - a),"discordant: only a=5, only b=2",0.4531,1.0
+mitigation,followed_fake,C4 M0,C4 M1,McNemar (exact),75,0.3333,0.3333,0.0,difference (b - a),"discordant: only a=3, only b=3",1.0,1.0
+mitigation,faithfulness,C4 M0,C4 M1,Wilcoxon signed-rank,72,0.9236,0.875,-1.0,rank-biserial r,non-zero differences: 4,0.125,1.0
+mitigation,correct,C4 M0,C4 M2,McNemar (exact),75,0.7067,0.5867,-0.12,difference (b - a),"discordant: only a=14, only b=5",0.0636,1.0
+mitigation,followed_fake,C4 M0,C4 M2,McNemar (exact),75,0.3333,0.4133,0.08,difference (b - a),"discordant: only a=6, only b=12",0.2379,1.0
+mitigation,faithfulness,C4 M0,C4 M2,Wilcoxon signed-rank,75,0.9267,0.8933,-0.5333,rank-biserial r,non-zero differences: 5,0.375,1.0
+mitigation,correct,C4 M1,C4 M2,McNemar (exact),75,0.6667,0.5867,-0.08,difference (b - a),"discordant: only a=12, only b=6",0.2379,1.0
+mitigation,followed_fake,C4 M1,C4 M2,McNemar (exact),75,0.3333,0.4133,0.08,difference (b - a),"discordant: only a=7, only b=13",0.2632,1.0
+mitigation,faithfulness,C4 M1,C4 M2,Wilcoxon signed-rank,72,0.875,0.8889,0.2,rank-biserial r,non-zero differences: 5,1.0,1.0
+mitigation,refused,C5 M0,C5 M1,McNemar (exact),95,0.0737,0.5474,0.4737,difference (b - a),"discordant: only a=0, only b=45",0.0,0.0
+mitigation,faithfulness,C5 M0,C5 M1,Wilcoxon signed-rank,43,0.4709,0.4186,-0.5714,rank-biserial r,non-zero differences: 7,0.2656,1.0
+mitigation,refused,C5 M0,C5 M2,McNemar (exact),95,0.0737,0.4105,0.3368,difference (b - a),"discordant: only a=0, only b=32",0.0,0.0
+mitigation,faithfulness,C5 M0,C5 M2,Wilcoxon signed-rank,56,0.369,0.2902,-0.4386,rank-biserial r,non-zero differences: 18,0.0953,1.0
+mitigation,refused,C5 M1,C5 M2,McNemar (exact),95,0.5474,0.4105,-0.1368,difference (b - a),"discordant: only a=16, only b=3",0.0044,0.1637
+mitigation,faithfulness,C5 M1,C5 M2,Wilcoxon signed-rank,40,0.4,0.3479,-0.5,rank-biserial r,non-zero differences: 7,0.2969,1.0
+condition vs C0,correct,C0 M0,C1 M0,McNemar (exact),75,0.9467,0.9067,-0.04,difference (b - a),"discordant: only a=3, only b=0",0.25,1.0
+condition vs C0,faithfulness,C0 M0,C1 M0,Wilcoxon signed-rank,75,0.94,0.9086,-1.0,rank-biserial r,non-zero differences: 3,0.25,1.0
+condition vs C0,correct,C0 M0,C2 M0,McNemar (exact),75,0.9467,0.92,-0.0267,difference (b - a),"discordant: only a=2, only b=0",0.5,1.0
+condition vs C0,faithfulness,C0 M0,C2 M0,Wilcoxon signed-rank,75,0.94,0.9156,-0.5714,rank-biserial r,non-zero differences: 6,0.25,1.0
+condition vs C0,correct,C0 M0,C3 M0,McNemar (exact),75,0.9467,0.92,-0.0267,difference (b - a),"discordant: only a=3, only b=1",0.625,1.0
+condition vs C0,faithfulness,C0 M0,C3 M0,Wilcoxon signed-rank,75,0.94,0.8956,-0.9286,rank-biserial r,non-zero differences: 7,0.0312,0.6562
+condition vs C0,correct,C0 M0,C4 M0,McNemar (exact),75,0.9467,0.7067,-0.24,difference (b - a),"discordant: only a=19, only b=1",0.0,0.0009
+condition vs C0,faithfulness,C0 M0,C4 M0,Wilcoxon signed-rank,75,0.94,0.9267,-0.4,rank-biserial r,non-zero differences: 4,0.5,1.0
+random vs related noise,correct,C1 M0,C2 M0,McNemar (exact),75,0.9067,0.92,0.0133,difference (b - a),"discordant: only a=2, only b=3",1.0,1.0
+random vs related noise,faithfulness,C1 M0,C2 M0,Wilcoxon signed-rank,75,0.9086,0.9156,0.0833,rank-biserial r,non-zero differences: 8,0.8906,1.0
+condition vs C0,correct,C0 M1,C1 M1,McNemar (exact),75,0.9333,0.9333,0.0,difference (b - a),"discordant: only a=1, only b=1",1.0,1.0
+condition vs C0,faithfulness,C0 M1,C1 M1,Wilcoxon signed-rank,72,0.9259,0.9213,-0.0952,rank-biserial r,non-zero differences: 6,0.9062,1.0
+condition vs C0,correct,C0 M1,C2 M1,McNemar (exact),75,0.9333,0.9067,-0.0267,difference (b - a),"discordant: only a=3, only b=1",0.625,1.0
+condition vs C0,faithfulness,C0 M1,C2 M1,Wilcoxon signed-rank,72,0.9329,0.9167,-0.3,rank-biserial r,non-zero differences: 4,0.75,1.0
+condition vs C0,correct,C0 M1,C3 M1,McNemar (exact),75,0.9333,0.9467,0.0133,difference (b - a),"discordant: only a=1, only b=2",1.0,1.0
+condition vs C0,faithfulness,C0 M1,C3 M1,Wilcoxon signed-rank,73,0.9269,0.911,-0.3333,rank-biserial r,non-zero differences: 5,0.625,1.0
+condition vs C0,correct,C0 M1,C4 M1,McNemar (exact),75,0.9333,0.6667,-0.2667,difference (b - a),"discordant: only a=21, only b=1",0.0,0.0003
+condition vs C0,faithfulness,C0 M1,C4 M1,Wilcoxon signed-rank,71,0.9249,0.8732,-0.5556,rank-biserial r,non-zero differences: 9,0.1719,1.0
+random vs related noise,correct,C1 M1,C2 M1,McNemar (exact),75,0.9333,0.9067,-0.0267,difference (b - a),"discordant: only a=4, only b=2",0.6875,1.0
+random vs related noise,faithfulness,C1 M1,C2 M1,Wilcoxon signed-rank,72,0.9144,0.9167,0.0,rank-biserial r,non-zero differences: 7,1.0,1.0
+condition vs C0,correct,C0 M2,C1 M2,McNemar (exact),75,0.9467,0.9467,0.0,difference (b - a),"discordant: only a=1, only b=1",1.0,1.0
+condition vs C0,faithfulness,C0 M2,C1 M2,Wilcoxon signed-rank,73,0.9041,0.8836,-0.4,rank-biserial r,non-zero differences: 4,0.625,1.0
+condition vs C0,correct,C0 M2,C2 M2,McNemar (exact),75,0.9467,0.92,-0.0267,difference (b - a),"discordant: only a=3, only b=1",0.625,1.0
+condition vs C0,faithfulness,C0 M2,C2 M2,Wilcoxon signed-rank,74,0.9054,0.8896,-0.3,rank-biserial r,non-zero differences: 4,0.75,1.0
+condition vs C0,correct,C0 M2,C3 M2,McNemar (exact),75,0.9467,0.9467,0.0,difference (b - a),"discordant: only a=1, only b=1",1.0,1.0
+condition vs C0,faithfulness,C0 M2,C3 M2,Wilcoxon signed-rank,74,0.9054,0.8964,-0.1667,rank-biserial r,non-zero differences: 3,1.0,1.0
+condition vs C0,correct,C0 M2,C4 M2,McNemar (exact),75,0.9467,0.5867,-0.36,difference (b - a),"discordant: only a=28, only b=1",0.0,0.0
+condition vs C0,faithfulness,C0 M2,C4 M2,Wilcoxon signed-rank,74,0.9054,0.8919,-0.2,rank-biserial r,non-zero differences: 5,1.0,1.0
+random vs related noise,correct,C1 M2,C2 M2,McNemar (exact),75,0.9467,0.92,-0.0267,difference (b - a),"discordant: only a=2, only b=0",0.5,1.0
+random vs related noise,faithfulness,C1 M2,C2 M2,Wilcoxon signed-rank,74,0.8851,0.8986,0.5,rank-biserial r,non-zero differences: 3,0.75,1.0

@@ -1,0 +1,63 @@
+# Full run: all 95 questions, all conditions x mitigations, 1 repeat at temperature 0.
+# The [data] and [retrieval] sections must match configs/pilot.toml so both runs
+# draw from the same corpus, question set, and perturbed contexts.
+
+run_name = "full"
+seed = 42
+
+[data]
+csv = "data/raw/squad_v2/validation.csv"
+n_articles = 25
+n_answerable = 75
+n_unanswerable = 20
+max_answer_words = 5
+
+[retrieval]
+embed_model = "nomic-embed-text"
+chroma_dir = "data/index/chroma_db"
+collection = "squad_v2_val_subset"
+k = 4
+candidate_pool = 50
+
+[experiment]
+max_answerable = 75
+max_unanswerable = 20
+conditions = ["C0", "C1", "C2", "C3", "C4", "C5"]
+mitigations = ["M0", "M1", "M2"]
+# With temperature 0 every repeat gives an identical answer, so more repeats need temperature > 0.
+repeats = 1
+
+[generator]
+model = "qwen3:8b"
+temperature = 0.0
+num_ctx = 8192
+num_predict = 256
+think = false
+
+[judge]
+model = "qwen3.8:27b"
+base_url = "http://localhost:11434/v1"
+temperature = 0.0
+max_tokens = 4096
+reasoning_effort = "none"
+embed_model = "nomic-embed-text"
+
+# Second-opinion judges (src/run_model.py --judge gemini|haiku). provider = "openai" means an
+# OpenAI-compatible endpoint at base_url; "anthropic" uses Anthropic's own API. Keys come from the
+# environment or .env. Answer relevancy always uses the local embed_model above, so only the
+# judging LLM differs between judges.
+[judges.gemini]
+provider = "openai"
+model = "gemini-3.8-flash"
+base_url = "https://generativelanguage.googleapis.com/v1beta/openai/"
+api_key_env = "GEMINI_API_KEY"
+temperature = 0.0
+max_tokens = 4096
+reasoning_effort = "none"
+
+[judges.haiku]
+provider = "anthropic"
+model = "claude-haiku-4-5"
+api_key_env = "ANTHROPIC_API_KEY"
+max_tokens = 4096
+# Anthropic's API rejects temperature and top_p, so Claude runs at its default sampling.

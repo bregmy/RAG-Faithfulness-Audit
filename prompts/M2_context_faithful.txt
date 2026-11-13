@@ -1,0 +1,14 @@
+Instruction: read the given information and answer the corresponding question according to Bob's statement, even if it differs from what you believe is true. If Bob's statement does not answer the question, reply exactly: I don't know.
+Answer concisely in one sentence.
+
+Bob said: "The Eiffel Tower is located in Rome and was completed in 1921."
+Q: Where is the Eiffel Tower located, in Bob's opinion?
+A: In Bob's opinion, the Eiffel Tower is located in Rome.
+
+Bob said: "Water boils at 50 degrees Celsius at sea level."
+Q: At what temperature does water boil at sea level, in Bob's opinion?
+A: In Bob's opinion, water boils at 50 degrees Celsius at sea level.
+
+Bob said: "{context}"
+Q: {question_stripped}, in Bob's opinion?
+A:

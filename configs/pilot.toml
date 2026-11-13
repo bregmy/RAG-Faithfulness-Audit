@@ -1,0 +1,42 @@
+# Pilot run: small subset of questions, all conditions x mitigations, 1 repeat.
+# The [data] and [retrieval] sections must match configs/full.toml so both runs
+# draw from the same corpus, question set, and perturbed contexts.
+
+run_name = "pilot"
+seed = 42
+
+[data]
+csv = "data/raw/squad_v2/validation.csv"
+n_articles = 25
+n_answerable = 75
+n_unanswerable = 20
+max_answer_words = 5
+
+[retrieval]
+embed_model = "nomic-embed-text"
+chroma_dir = "data/index/chroma_db"
+collection = "squad_v2_val_subset"
+k = 4
+candidate_pool = 50
+
+[experiment]
+max_answerable = 8
+max_unanswerable = 2
+conditions = ["C0", "C1", "C2", "C3", "C4", "C5"]
+mitigations = ["M0", "M1", "M2"]
+repeats = 1
+
+[generator]
+model = "qwen3:8b"
+temperature = 0.0
+num_ctx = 8192
+num_predict = 256
+think = false
+
+[judge]
+model = "qwen3.8:27b"
+base_url = "http://localhost:11434/v1"
+temperature = 0.0
+max_tokens = 2048
+reasoning_effort = "none"
+embed_model = "nomic-embed-text"

@@ -1,0 +1,18 @@
+[project]
+name = "rag-faithfulness-audit"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.6.0",
+    "chromadb>=1.5.9",
+    "jupyter>=1.1.1",
+    "langchain-community==0.4.1",
+    "langchain-google-genai>=4.4.2",
+    "matplotlib>=3.11.2",
+    "ollama>=0.6.3",
+    "pandas>=3.1.0",
+    "python-dotenv>=1.2.4",
+    "ragas>=0.4.3",
+    "scipy>=1.18.1",
+    "tabulate>=0.10.0",
+]

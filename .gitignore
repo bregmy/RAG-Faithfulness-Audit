@@ -1,0 +1,31 @@
+# Secrets (never commit real keys; only the blank template is tracked)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Raw dataset (re-downloadable; train.csv is 124 MB)
+data/raw/
+
+# Run outputs and caches (keep the folder, not the contents)
+runs/*
+!runs/.gitkeep
+# Exception: the base run's frozen contexts, which every other model run reuses
+!runs/full/
+runs/full/*
+!runs/full/contexts.jsonl
+
+# Search index cache (rebuilt from data/ by step 2)
+.cache/
+chroma_db/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.~lock.*#

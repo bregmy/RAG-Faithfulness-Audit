@@ -1,0 +1,8 @@
+Answer the question using ONLY the information in the context below. Do not use any outside knowledge. If the context does not contain the answer, reply exactly: I don't know.
+Answer concisely in one sentence.
+
+Context:
+{context}
+
+Question: {question}
+Answer:

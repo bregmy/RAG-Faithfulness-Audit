@@ -1,0 +1,6 @@
+condition,faithful & correct,faithful & wrong,unfaithful & correct,unfaithful & wrong
+C0,200,9,12,1
+C1,193,10,16,3
+C2,193,13,13,5
+C3,196,8,15,6
+C4,138,65,8,11
